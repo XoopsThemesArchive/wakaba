@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+
+<body>
+<div id="mainbody">
+
+<!-- ヘッダ部分の定義 -->
+<div id="navigation">
+<ul>
+<li>
+  <a class="menu" href="<{$xoops_url}>/modules/contact/">
+  <b class="snazzy"><span class="boxcontent violet">お問い合せ</span>
+  <b class="b4 violet"></b><b class="b3 violet"></b><b class="b2 violet"></b><b class="b1"></b>
+  </b></a>
+</li>
+<li>
+  <a class="menu" href="<{$xoops_url}>/modules/mylinks/">
+  <b class="snazzy"><span class="boxcontent indigo">リンク集</span>
+  <b class="b4 indigo"></b><b class="b3 indigo"></b><b class="b2 indigo"></b><b class="b1"></b>
+  </b></a>
+</li>
+<li>
+  <a class="menu" href="<{$xoops_url}>/modules/mydownloads/">
+  <b class="snazzy"><span class="boxcontent blue">ダウンロード</span>
+  <b class="b4 blue"></b><b class="b3 blue"></b><b class="b2 blue"></b><b class="b1"></b>
+</b></a>
+</li>
+<li>
+  <a class="menu" href="<{$xoops_url}>/modules/xcgal/">
+  <b class="snazzy"><span class="boxcontent green">ギャラリー</span>
+  <b class="b4 green"></b><b class="b3 green"></b><b class="b2 green"></b><b class="b1"></b>
+  </b></a>
+</li>
+<li>
+  <a class="menu" href="<{$xoops_url}>/modules/newbb/">
+  <b class="snazzy"><span class="boxcontent yellow">フォーラム</span>
+  <b class="b4 yellow"></b><b class="b3 yellow"></b><b class="b2 yellow"></b><b class="b1"></b>
+  </b></a>
+</li>
+<li>
+  <a class="menu" href="<{$xoops_url}>/modules/news/">
+  <b class="snazzy"><span class="boxcontent orange">ニュース</span>
+  <b class="b4 orange"></b><b class="b3 orange"></b><b class="b2 orange"></b><b class="b1"></b>
+  </b></a>
+</li>
+<li>
+  <a class="menu" href="<{$xoops_url}>/">
+  <b class="snazzy"><span class="boxcontent red">ホーム</span>
+  <b class="b4 red"></b><b class="b3 red"></b><b class="b2 red"></b><b class="b1"></b>
+  </b></a>
+</li>
+</ul>
+</div>
+
+<table cellspacing="0" summary="header">
+<tr>
+<td id="headerlogo">
+	<a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>logo.gif" border="0" /></a>
+</td>
+<td id="headerbanner">
+	<form action="<{$xoops_url}>/search.php" method="get" style="margin:5px 0px;">
+	<input type="text" name="query" size="40" style="border:1px solid #333333;height:17px;" />
+	<input type="hidden" name="action" value="results" />
+	<input type="submit" name="searchSubmit" value="サイト内検索" style="border:1px solid #333333;background:#F6F1E9;" />
+	</form>
+</td>
+</tr>
+
+</table>
+<!-- ヘッダ部分終わり -->
+
+<div class="poweredby gray">XOOPS Cube</div>
+
+<table cellspacing="0" summary="main">
+<tr>
+
+<!-- 左ブロック部分の定義 -->
+<{if $xoops_showlblock == 1}>
+<td id="leftcolumn">
+	<{foreach item=block from=$xoops_lblocks}>
+	<div class="blockTitle">
+	<div class="rtop"><span class="r1"></span><span class="r2"></span><span class="r3"></span><span class="r4"></span></div>
+	<p><{$block.title}></p>
+	</div>
+	
+	<div class="blockContent">
+	<p><{$block.content}></p>
+	<div class="rbottom"><span class="r4"></span><span class="r3"></span><span class="r2"></span><span class="r1"></span></div>
+	</div>
+	<{/foreach}>
+<{/if}>
+<!-- 左ブロック終わり -->
+
+<!-- 右ブロック部分の定義 -->
+<{if $xoops_showrblock == 1}>
+	<{foreach item=block from=$xoops_rblocks}>
+	<div class="blockTitle">
+	<div class="rtop"><span class="r1"></span><span class="r2"></span><span class="r3"></span><span class="r4"></span></div>
+	<p><{$block.title}></p>
+	</div>
+	
+	<div class="blockContent">
+	<p><{$block.content}></p>
+	<div class="rbottom"><span class="r4"></span><span class="r3"></span><span class="r2"></span><span class="r1"></span></div>
+	</div>
+	<{/foreach}>
+<{/if}>
+<br />
+</td>
+<!-- 右ブロック部分終わり -->
+
+
+<!-- メイン部分の定義 -->
+<td id="centercolumn">
+
+	<{if $xoops_showcblock == 1}>
+	<table cellspacing="0" summary="main_center">
+	<tr>
+	<!-- 中央-中央ブロック部分の定義 -->
+	<td id="centerCcolumn" colspan="2">
+		<{foreach item=block from=$xoops_ccblocks}>
+		<div class="blockTitle"><{$block.title}>
+		<div class="blockContent"><{$block.content}></div>
+		</div>
+		<{/foreach}>
+	</td>
+	<!-- 中央-中央ブロック部分終わり -->
+	</tr>
+
+	<tr>
+	<!-- 中央-左ブロック部分の定義 -->
+	<td id="centerLcolumn">
+		<{foreach item=block from=$xoops_clblocks}>
+		<div class="blockTitle"><{$block.title}>
+		<div class="blockContent"><{$block.content}></div>
+		</div>
+		<{/foreach}>
+	</td>
+	<!-- 中央-左ブロック部分終わり -->
+
+	<!-- 中央-右ブロック部分の定義 -->
+	<td id="centerRcolumn">
+		<{foreach item=block from=$xoops_crblocks}>
+		<div class="blockTitle"><{$block.title}>
+		<div class="blockContent"><{$block.content}></div>
+		</div>
+		<{/foreach}>
+	</td>
+	<!-- 中央-右ブロック部分終わり -->
+	</tr>
+	</table>
+	<{/if}>
+
+	<div id="content">
+	<{$xoops_contents}>
+	</div>
+
+</td>
+<!-- メイン部分終わり -->
+
+</tr>
+</table>
+
+<!-- フッタ部分の定義 -->
+<table cellspacing="0" summary="footer">
+<tr>
+<td id="footerbar">
+  <{$xoops_footer}><br />
+	Theme Designed by <a href="http://hello.oceannet.jp/" target="_blank">OCEAN-NET</a>
+</td>
+</tr>
+</table>
+<!-- フッタ部分終わり -->
+</div>
+
+</body>
+</html>
